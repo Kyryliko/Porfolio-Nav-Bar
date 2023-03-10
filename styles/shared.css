@@ -1,0 +1,89 @@
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 1rem;
+  list-style: none;
+}
+
+li {
+  display: inline;
+  float: left;
+  padding: 1rem;
+}
+
+li a {
+  padding: 0.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(205, 212, 223);
+}
+
+.active {
+  color: aliceblue;
+  background-color: rgb(84, 84, 84);
+}
+
+.logo {
+  float: left;
+  border: solid black thin;
+}
+
+.logo:hover {
+  background-color: rgb(205, 212, 223);
+}
+
+.gap {
+  margin-left: 5rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+/* .dropdown-links {
+  margin-top: 1rem;
+} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.autorization {
+  float: right;
+}
+
+li:not(.autorization) {
+  border-bottom: solid thin;
+}
+
+button {
+  background-color: white;
+  border: solid black thin;
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 0.3rem;
+}
+
+button:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
