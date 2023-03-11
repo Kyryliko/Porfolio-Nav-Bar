@@ -24,9 +24,207 @@
             src="/Portfolio/types-of-nav-bar/number-1/scripts/app.js"
             defer>
     </script>
-        <title>NavBar #1</title>
     </head>
     <body>
-        <div id="backdrop-for-overlay"></div>
+        <header>
+            <div id="backdrop-for-overlay"></div>
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <a
+                            href="/Portfolio/types-of-nav-bar/number-1/index.html">
+                            This is Logo</a>
+                    </li>
+                    <li class="gap">
+                        <a
+                            href="/Portfolio/types-of-nav-bar/number-1/index.html">
+                            Home</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a
+                                class="active-page">
+                                Our courses</a>
+                            <div class="dropdown-content">
+                                <a
+                                    href="/Portfolio/types-of-nav-bar/number-1/pages/course-html.html"
+                                    class="dropdown-links">HTML</a>
+                                <a
+                                    href="/Portfolio/types-of-nav-bar/number-1/pages/course-css.html"
+                                    class="dropdown-links">CSS</a>
+                                <a
+                                    href="/Portfolio/types-of-nav-bar/number-1/pages/course-javascript.html"
+                                    class="dropdown-links active-page">JavaScripts</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a
+                            href="/Portfolio/types-of-nav-bar/number-1/pages/news.html">News</a>
+                    </li>
+                    <li>
+                        <a
+                            href="/Portfolio/types-of-nav-bar/number-1/pages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a
+                            href="/Portfolio/types-of-nav-bar/number-1/pages/about.html">About</a>
+                    </li>
+                    <li class="autorization">
+                        <div class="autorization-div">
+                            <button id="btn-log-in">Log in</button>
+                            <button id="btn-sign-up">Sign up</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div
+                class="authorization-overlay-block">
+                <div
+                    class="authorization-overlay-login"
+                    id="authorization-login">
+                    <h2>Welcome!</h2>
+                    <form action="">
+                        <label
+                            for="old-user-email">
+                            E-mail
+                        </label>
+                        <input
+                            type="email"
+                            id="old-user-email"
+                            name="old-user-email"
+                            required>
+
+                        <label
+                            for="old-user-pass">
+                            Password
+                        </label>
+                        <input
+                            type="password"
+                            id="old-user-pass"
+                            name="old-user-pass"
+                            required>
+                        <div>
+                            <button
+                                type="submit"
+                                class="btn-sbmt-authorization"
+                                id="submit-login-btn">
+                                Log in
+                            </button>
+                            <button
+                                type="button"
+                                class="btn-res-authorization"
+                                id="cancel-login-btn">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div
+                    class="authorization-overlay-signup"
+                    id="authorization-signup">
+                    <h2>Enter your data</h2>
+                    <form action="">
+                        <label
+                            for="new-user-name">
+                            Name
+                        </label>
+                        <input
+                            type="text"
+                            name="new-user-name"
+                            id="new-user-name"
+                            required>
+
+                        <label
+                            for="new-user-secname">
+                            Second Name
+                        </label>
+                        <input
+                            type="text"
+                            name="new-user-secname"
+                            id="new-user-secname"
+                            required>
+
+                        <label
+                            for="new-user-birth">
+                            Date of birth
+                        </label>
+                        <input
+                            type="date"
+                            name="new-user-birthday"
+                            id="new-user-birthday"
+                            min="2005-01-01"
+                            required>
+
+                        <label
+                            for="new-user-phone">
+                            Phone number
+                        </label>
+                        <input
+                            type="tel"
+                            name="new-user-phone"
+                            id="new-user-phone"
+                            placeholder="+372 XXX XXXX"
+                            maxlength="7"
+                            required>
+
+                        <label
+                            for="new-user-email">
+                            E-mail
+                        </label>
+                        <input
+                            type="email"
+                            id="new-user-email"
+                            name="new-user-email"
+                            required>
+
+                        <label
+                            for="new-user-pass">
+                            Password
+                        </label>
+                        <input
+                            type="password"
+                            id="new-user-pass"
+                            name="new-user-pass"
+                            required>
+
+                        <label
+                            for="new-user-pass-repeat">
+                            Repeat Password
+                        </label>
+                        <input
+                            type="password"
+                            id="new-user-pass-repeat"
+                            name="new-user-pass-repeat"
+                            required>
+
+                        <label
+                            for="terms">
+                            Agree with Terms and
+                            Conditions
+                        </label>
+                        <input
+                            type="checkbox"
+                            name="terms"
+                            id="terms"
+                            required>
+                        <div>
+                            <button
+                                type="submit"
+                                class="btn-sbmt-authorization"
+                                id="submit-signup-btn">
+                                Register
+                            </button>
+                            <button
+                                type="button"
+                                class="btn-res-authorization"
+                                id="cancel-signup-btn">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
     </body>
 </html>

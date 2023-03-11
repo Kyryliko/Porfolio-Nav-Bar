@@ -27,7 +27,7 @@ li a:hover:not(.active) {
   background-color: rgb(205, 212, 223);
 }
 
-.active {
+.active-page {
   color: aliceblue;
   background-color: rgb(84, 84, 84);
 }
@@ -47,7 +47,7 @@ li a:hover:not(.active) {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .dropdown-content {
@@ -59,12 +59,9 @@ li a:hover:not(.active) {
   z-index: 1;
 }
 
-/* .dropdown-links {
-  margin-top: 1rem;
-} */
-
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .autorization {
